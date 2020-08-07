@@ -20,7 +20,7 @@ def get_english_meaning(file_path, emoticon)
   emos = load_library(file_path)
   emos.each do |key, value|
    #binding.pry
-    if emos[key][value] == [:japanese]
+    if emos[key][:japanese]
       return emos[key]
     end
     #binding.pry
@@ -30,9 +30,13 @@ end
 
 def get_japanese_emoticon
   # code goes here
-  emo_library = load_library(file_path)
-  emo_library.each do |key, value|
-    #binding.pry 
+  emos = load_library(file_path)
+  emos.each do |key, value|
+   #binding.pry
+    if emos[key][:english]
+      return emos[key][:japanese]
+    end
+    #binding.pry
   end 
   #binding.pry 
 end
