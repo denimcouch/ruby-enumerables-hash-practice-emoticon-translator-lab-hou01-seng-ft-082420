@@ -34,7 +34,7 @@ def get_japanese_emoticon(file_path, emoticon)
   emos.each do |key, value|
    #binding.pry
     if emos[key][:english]
-      return emos[key][:japanese]
+      emos[key][:japanese]
     end
     #binding.pry
   end 
