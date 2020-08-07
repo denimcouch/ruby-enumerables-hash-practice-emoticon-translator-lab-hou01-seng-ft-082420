@@ -18,7 +18,10 @@ end
 def get_english_meaning(file_path, emoticon)
   # code goes here
   emos = load_library(file_path)
-  binding.pry 
+  emos.each do |key, value|
+    binding.pry 
+  end 
+  #binding.pry 
   
 end
 
