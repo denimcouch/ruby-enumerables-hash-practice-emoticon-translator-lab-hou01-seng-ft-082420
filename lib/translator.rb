@@ -20,7 +20,7 @@ def get_english_meaning(file_path, emoticon)
   emos = load_library(file_path)
   emos.each do |key, value|
    #binding.pry
-    if emos[key][value] == :japanese
+    if emos[key][:japanese] == japanese.emoticon
        puts emos[key]
     end
     binding.pry
