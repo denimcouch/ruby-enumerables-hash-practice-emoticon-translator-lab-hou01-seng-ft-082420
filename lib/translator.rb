@@ -23,7 +23,7 @@ def get_english_meaning(file_path, emoticon)
     if emos[key][:japanese] == emoticon
        return emos[key]
     end
-    binding.pry
+    #binding.pry
   end 
   #binding.pry 
 end
