@@ -23,9 +23,9 @@ def get_english_meaning(file_path, emoticon)
     if emos[key][value] == [:japanese]
       return emos[key]
     end
-    binding.pry
+    #binding.pry
   end 
-  #binding.pry 
+  binding.pry 
   
 end
 
