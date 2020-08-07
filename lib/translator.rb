@@ -1,4 +1,3 @@
-# require modules here
 require 'yaml'
 require 'pry'
 
@@ -16,27 +15,21 @@ def load_library(file_path)
 end
 
 def get_english_meaning(file_path, emoticon)
-  # code goes here
   emos = load_library(file_path)
   emos.each do |key, value|
     if emos[key][:japanese] == emoticon
        return key
     end
-    #binding.pry
   end 
-  #binding.pry
   return "Sorry, that emoticon was not found"
 end
 
 def get_japanese_emoticon(file_path, emoticon)
-  # code goes here
   emos = load_library(file_path)
   emos.each do |key, value|
     if emos[key][:english] == emoticon
        return emos[key][:japanese]
     end
-    #binding.pry
   end 
-  #binding.pry
   return "Sorry, that emoticon was not found"
 end
