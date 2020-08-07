@@ -21,7 +21,7 @@ def get_english_meaning(file_path, emoticon)
   emos.each do |key, value|
    #binding.pry
     if emos[key][value] == [:japanese]
-      return key
+      return emos[key]
     end
     #binding.pry
   end 
